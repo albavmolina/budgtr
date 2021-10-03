@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr App - Index</title>
+</head>
+<body>
+    <h1> Budgtr Index Page</h1>
+    <ul>
+        <% for (let i = 0; i < budget.length; i++) { %> 
+            <li>
+    
+                <a href="/budgets/<%=i%>">
+                    <%=budget[i].name%></a><br>
+                    Date: <%=budget[i].date%>
+                <% } %>
+            </li>
+    </ul>
+    
+</body>
+</html>
